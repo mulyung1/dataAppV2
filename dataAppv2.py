@@ -28,7 +28,7 @@ Are the two indicators correlated. i.e., does the occurence of one(x) influence 
 styl=['https://codepen.io/chriddyp/pen/bWLwgP.css']
 #initialise the app and incorporate css
 app=Dash(__name__, external_stylesheets=styl)
-
+server=app.server
 
 #define the app layout
 app.layout=html.Div([
