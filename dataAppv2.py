@@ -1,4 +1,4 @@
-from dash import Dash, dcc, html, callback, Output, Input, dash_table
+sfrom dash import Dash, dcc, html, callback, Output, Input, dash_table
 import pandas as pd
 import plotly.express as px
 
@@ -7,7 +7,7 @@ df=pd.read_csv('https://plotly.github.io/datasets/country_indicators.csv')
 #print(df[:11])
 #body of website
 markdown_text='''
-## QUESTION: Does the value added in Industries affect the CO2 output?
+## Is there a relationship between the contribution of the industry sector to GDP (value added %) and CO2 emissions per capita in an economy??
 
 Are the two indicators correlated. i.e., does the occurence of one(x) influence the occurence of another(y)??
 
