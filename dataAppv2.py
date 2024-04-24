@@ -7,7 +7,7 @@ df=pd.read_csv('https://plotly.github.io/datasets/country_indicators.csv')
 #print(df[:11])
 #body of website
 markdown_text='''
-## Is there a relationship between the contribution of the industry sector to GDP (value added %) and CO2 emissions per capita in an economy??
+#### Is there a relationship between the contribution of the industry sector to GDP (value added %) and CO2 emissions per capita in an economy??
 
 Are the two indicators correlated. i.e., does the occurence of one(x) influence the occurence of another(y)??
 
