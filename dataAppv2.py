@@ -7,7 +7,7 @@ df=pd.read_csv('https://plotly.github.io/datasets/country_indicators.csv')
 #print(df[:11])
 #body of website
 markdown_text='''
-## QUESTION: Does the amount of electrical power consumed affect the energy output in an economy?
+## QUESTION: Does the value added in Industries affect the CO2 output?
 
 Are the two indicators correlated. i.e., does the occurence of one(x) influence the occurence of another(y)??
 
@@ -41,7 +41,7 @@ app.layout=html.Div([
         html.Div([
             dcc.Dropdown(
                 df['Indicator Name'].unique(),
-                'Electric power consumption (kWh per capita)',
+                'Industry, value added (% of GDP)',
                 id='independent_var'
             ),
             dcc.RadioItems(
@@ -54,7 +54,7 @@ app.layout=html.Div([
         html.Div([
             dcc.Dropdown(
                 df['Indicator Name'].unique(),
-                'Energy use (kg of oil equivalent per capita)',
+                'CO2 emissions (metric tons per capita)',
                 id='dependent_var'),
             dcc.RadioItems(
                 ['Linear','Log'],
